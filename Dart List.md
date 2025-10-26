@@ -45,10 +45,10 @@ void main() {
 ```dart
 void main() {
   List<String> products = ["Shoes", "Bag", "T-shirt"];
-  
+
   // Update an item
   products[1] = "Backpack";
-  
+
   print(products); // [Shoes, Backpack, T-shirt]
 }
 ```
@@ -62,13 +62,13 @@ void main() {
 ```dart
 void main() {
   List<String> cart = ["Shoes"];
-  
+
   // Add single item
   cart.add("T-shirt");
-  
+
   // Add multiple items
   cart.addAll(["Bag", "Hat"]);
-  
+
   print(cart); // [Shoes, T-shirt, Bag, Hat]
 }
 ```
@@ -82,13 +82,13 @@ void main() {
 ```dart
 void main() {
   List<String> cart = ["Shoes", "T-shirt", "Bag"];
-  
+
   // Remove by value
   cart.remove("T-shirt");
-  
+
   // Remove by index
   cart.removeAt(1);
-  
+
   print(cart); // [Shoes]
 }
 ```
@@ -106,7 +106,7 @@ void main() {
 ```dart
 void main() {
   List<String> products = ["Shoes", "Bag"];
-  
+
   print(products.length);     // 2
   print(products.isEmpty);    // false
   print(products.isNotEmpty); // true
@@ -122,7 +122,7 @@ void main() {
 ```dart
 void main() {
   List<String> products = ["Shoes", "Bag", "T-shirt"];
-  
+
   for (int i = 0; i < products.length; i++) {
     print(products[i]);
   }
@@ -134,7 +134,7 @@ void main() {
 ```dart
 void main() {
   List<String> products = ["Shoes", "Bag", "T-shirt"];
-  
+
   for (var product in products) {
     print(product);
   }
@@ -146,7 +146,7 @@ void main() {
 ```dart
 void main() {
   List<String> products = ["Shoes", "Bag", "T-shirt"];
-  
+
   products.forEach((product) {
     print(product);
   });
